@@ -1,0 +1,32 @@
+<html>
+    <head><title>Lemon</title></head>
+    <body>
+        <script>
+            var images=["https://naukrirecruiter.naukri.com/profilePic/getpic?pid=1447831995rp2477528_medium4", 
+            "https://media-exp1.licdn.com/dms/image/C4E03AQGhcpzFAxPpTA/profile-displayphoto-shrink_200_200/0/1568144562757?e=1628121600&v=beta&t=wdEkuTkAAkdfXc6dDuMz1TZpLYKeAt77luZxmypRHIQ", 
+            "https://d2e111jq13me73.cloudfront.net/sites/default/files/styles/blog_article/public/blog/csm-blog/raise-kid-conscience2-blog-1138x658.jpg?itok=VUcKiAz8", 
+            "https://i.pinimg.com/originals/16/71/98/167198b6813204933f5c682925d0c08b.jpg"];
+
+            var names=["Santhosh Karuthethil", "Sangeeta Somanath", "Niranjan Santhosh", "Paneer"];
+var i=0
+            function change(){
+                document.getElementById("album").src=images[i];
+                document.getElementById("name").innerHTML=names[i];
+                i++;
+                if (i>3)
+                {
+                    i=0;
+                }
+            }
+        </script>
+        <center>
+        <h1>My Family Book</h1>
+
+        <img id="album" src="https://st.depositphotos.com/1967477/4473/v/950/depositphotos_44735787-stock-illustration-happy-family-cartoon.jpg">
+
+        <h3 id="name">Family</h3>
+
+        <button onclick="change()">Next</button>
+        </center>
+    </body>
+</html>
